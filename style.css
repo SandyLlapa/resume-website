@@ -4,6 +4,7 @@
 body {
   font-family: Arial;
   margin: 0;
+  background-color:#b3c7ff; 
 }
 .links{
   background-color:#4153fa;
@@ -33,12 +34,21 @@ a:hover{
 #intro{
   display: block;
   padding:20px;
-  border:3px solid;
+  /* border:3px solid; */
   text-align: center;
+  background-color: #fac6a0;
 }
 #name{
   font-size: 60px;
   margin-bottom: 10px;
+}
+#description{
+  font-size: 20px;;
+}
+
+#contact{
+  font-size: 40px;
+  padding-top: 60px;
 }
 
 #profile{
@@ -48,7 +58,7 @@ a:hover{
   border:40px solid;
 
   border-image-slice:65;
-  border-image-source:url(border.svg);
+  border-image-source:url(border.svg);  /*change border color to gray color*/
 
 }
 
