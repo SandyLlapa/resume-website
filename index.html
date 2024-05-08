@@ -11,16 +11,15 @@
   <div class="Home" id="home">
     <div class="links">
       <a href="#home">Home</a>
+      <a href="#AboutMe">About Me</a>
       <a href="#education">Education</a>
+      <a href="#techSkill">Skills</a>
       <a href="#projects">Project</a>
-      <a href="">About Me</a>
       <a href="#home">Contact Me</a>
     </div>
 
     <div class="content">
-
       <img id="profile" src="profile.jpg" alt="Just a picture of me">
-
       <div id="intro">
         <h1 id="name">SANDY LLAPA</h1>
         <h4 id="description"> I am in my fourth year of pursuing a degree in computer science at the University of Minnesota - Twin Cities. 
@@ -29,7 +28,6 @@
           As a result, I inspire to be a software engineer to continue challenging myself, solving problems, & contributing to the development of technologies.</h4>
 
         <div class="contact">
-          
           <div id="contactTitle">
             <h2>Contact Me:</h2>
           </div>
@@ -62,8 +60,22 @@
     </div>
   </div>
 
-  <h2 class="header_title">Education</h2>
-  <div class="education" id="education">
+  <h2 class="header_title" id="AboutMe">About Me</h2>
+  <div class="personal">
+    <p>Hello! I'm Sandy Llapa, a first-generation student at the University of Minnesota. By the end of 2024, I will proudly be the first in my family to earn a college degree. Education has always been the top priority in my life, driving me to excel and pursue my goals relentlessly. Special moments like graduating at the top of my high school class, being accepted into college, and receiving a full scholarship have confirmed that my determination has indeed paid off.</p>
+    <p>Navigating college life has come with its challenges, yet my greatest inspiration to keep working hard has been my little sister. Growing up I did not have anyone in my family who had obtained a college degree and this has motivated me to change that narrative for my sister and future generations. Despite the hurdles, I have thoroughly enjoyed the college experience, particularly the opportunities to tackle and overcome new challenges.</p>
+    <p>My passion for programming has grown with every project I've tackled, ranging from simple class assignments to significant initiatives like collaborating on a team to develop efficient software solutions. I thrive in a collaborative environment, where I'm known as the go-to person for guidance and keeping the team on track. Whenever there's a challenge or an issue with the program, my teammates confidently turn to me, trusting in my ability to find a solution.</p>
+    <p>As I look towards the future, my goal is to use my Computer Science degree to specialize in software development and design. I am eager to continue to tackle new challenges that will further enhance my skills. By continuing to be the go-to expert for innovative solutions, I hope to not only advance my expertise but also support and uplift my colleagues in the field.</p>
+
+
+  </div>
+
+
+
+
+
+  <h2 class="header_title" id="education">Education</h2>
+  <div class="education">
     <div class="top">
       <p id="major"><strong>Major:</strong> Computer Science B.S</p>
       <p id="year"><strong>Expected graduation year:</strong> December 2024</p>
@@ -94,7 +106,7 @@
 
   </div>
 
-  <h2 class="header_title">Technical Skills</h2>
+  <h2 class="header_title" id="techSkill">Technical Skills</h2>
   <div class="skills">
   
     <div class="container">   
@@ -155,9 +167,9 @@
     </div>
   </div>
 
-  <h2 class="header_title">Projects</h2>
+  <h2 class="header_title"  id="projects">Projects</h2>
 
-  <div class="projects" id="projects">
+  <div class="projects">
 
 
     <div class="Calc">
@@ -167,6 +179,9 @@
         <p>Made with: HTML, CSS, JavaScript</p>
         <a href="https://sandyllapa.github.io/Calculator/">Live</a>
         <a href="https://github.com/SandyLlapa/Calculator">GitHub</a>
+
+        <p>One of the first web-interactive projects I tackled was developing a calculator. After teaching myself front-end development, I successfully created a functional and user-friendly calculator. The aspect I found both challenging and rewarding was designing the website's front-end. While my experience had predominantly been in back-end development, this project provided excellent practice and significantly improved my front-end skills.
+        </p>
         
 
       </div>
@@ -176,18 +191,14 @@
       <div class="rockimage">
         <img src="Rock_paper_scissors.png" alt="Rock Paper Scissors Game">
       </div>
-      <div class="overlay">
-        <div class="text">Hello World</div>
-      </div>
       <div class="rockContent">
         <h2>Rock Paper Scissors Game</h2>
         <p>Made with: HTML, CSS, JavaScript</p>
         <a href="https://sandyllapa.github.io/Rock-Paper-Scissors/">Live</a>
         <a href="https://github.com/SandyLlapa/Rock-Paper-Scissors">GitHub</a>
-        <p>Designed and implemented a classic Rock, Paper, Scissors game using 
-          HTML, CSS, and JavaScript. This interactive web application allows users 
-          to play against a computer-generated opponent, competing in a best-out-of-five 
-          rounds format.</p>
+        <p>I designed and implemented an interactive Rock, Paper, Scissors game. This web application engages users in a dynamic competition against a computer-controlled opponent, with the winner determined through a best-of-five rounds format.
+          Working on this project allowed me to significantly enhance my front-end development skills, deepening my understanding of HTML, CSS, and JavaScript while creating an engaging user experience.
+        </p>
       </div>
       
 
@@ -201,6 +212,10 @@
         <h2>Drone Delivery Simulation</h2>
         <p>Made with: HTML, CSS, JavaScript, C++</p>
         <a href="https://hub.docker.com/repository/docker/sandyllapa/drone_sim/general">Docker Image</a>
+        <p>Developing this drone simulation was one of my favorite projects I have worked on. I collaborated with 3 other teammates to create a drone simulation that virtually delivered items to entities on a map. I thrived on the collaborative process, especially employing complex algorithms to create a visually compelling and functional web interface. We integrated several advanced search algorithms, including A*, Dijkstra, DFS, and BFS, to optimize the drone's navigation routes to the designated entities.
+
+          A critical aspect of our simulation was considering the drone's battery life. We programmed the drone to automatically reroute to a nearby charging station if its battery level became critically low during a delivery. This feature not only added realism but also involved intricate problem-solving regarding power management. Moreover, we enhanced user interaction with the implementation of real-time notifications. These alerts kept users informed about the drone's status and provided updates on the package delivery process, enhancing the overall user engagement with our simulation.
+          </p>
       </div>
     </div>
 
@@ -213,6 +228,7 @@
         <h2>Dancing Ants Simulation</h2>
         <p>Made with: HTML, Typescript, JavaScript</p>
         <a href="https://csci-4611-spring-2024.github.io/assignment-4-SandyLlapa/">Live</a>
+        <p>The dance simulation utilizes data from the Carnegie mellon motion database to animate computer graphics characters. To animate the characters, skeleton-based mocap data were used to help with smoothly showing movements. Techniques such as scaling, rotating, and translating were used to transform basic geometric 3D shapes into complex scenes and characters. By skillfully manipulating the mocap data, various animation effects could be implemented, including loop animation for seamless motion continuity and overlaying motion clips for character actions.  </p>
       </div>
     </div>
 
@@ -226,6 +242,7 @@
         <h2>Space MineSweeper</h2>
         <p>Made with: HTML, Typescript, JavaScript</p>
         <a href="https://csci-4611-spring-2024.github.io/assignment-1-SandyLlapa/">Live</a>
+        <p>Space Minesweeper is a game where a spaceship is tasked with clearing mines in outer space. Players control the spaceship by moving their mouse in the desired direction on the webpage, causing the spaceship to navigate accordingly. To eliminate the mines, the spaceship fires lasers at the targeted locations. The development of this program involved the use of 2D graphics coordinate systems and vectors, which are crucial for accurately positioning and maneuvering game elements.</p>
       </div>
     </div>
 
@@ -240,6 +257,7 @@
         <h2>Earthquake Visualization</h2>
         <p>Made with: HTML, Typescript, JavaScript</p>
         <a href="https://csci-4611-spring-2024.github.io/assignment-3-SandyLlapa/">Live</a>
+        <p> The Earthquake Visualization simulation dynamically displays earthquake events that occurred between 1905 and 2007, offering both 2D map and 3D globe perspectives. This simulation enhances visual detail by applying textures to 3D objects and utilizes vertex buffers to render deforming 3D meshes, facilitating seamless transformations between the 2D and 3D views. </p>
       </div>
 
     </div>
@@ -255,6 +273,7 @@
         <h2>Hole in Ground Game</h2>
         <p>Made with: HTML, Typescript, JavaScript</p>
         <a href="https://csci-4611-spring-2024.github.io/assignment-2-SandyLlapa/">Live</a>
+        <p> The purpose of the 'Hole in the Ground Game' is to develop an engaging 3D physics-based video game, drawing inspiration from the innovative gameplay of the 2018 hit, Donut County. In this game, players manipulate a hole in the ground that enlarges each time an object falls into it. The development process involved crafting 3D geometric objects and managing 3D points, vectors, and geometric transformations to simulate realistic interactions. A key aspect of this game is the balance between realism and gameplay, ensuring that the physics implementation enhances the gaming experience without compromising smoothness or playability.</p>
       </div>
 
     </div>
@@ -263,12 +282,6 @@
 
 
   </div>
-
-  <!-- <div class="about_me">
-    <h2 class="header_title">About Me</h2>
-  </div> -->
-
-
 
   <script src="script.js"></script>
   

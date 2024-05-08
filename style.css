@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: Arial;
+  font-family:'Times New Roman',Cambria, Cochin, Georgia, Times, serif;
   margin: 0;
   background-color:#ffffff; 
 }
@@ -50,6 +50,7 @@ a:hover{
   box-shadow: 5px 5px 15px #000f7db0;
 
 }
+
 #name{
   font-size: 60px;
   margin-bottom: 10px;
@@ -100,18 +101,11 @@ a:hover{
   width:100px;
 }
 #handles{
-  /* border:3px solid; 
-  m */
-
   display: flex;
   justify-content: space-evenly;
- 
- 
   padding-left: 0px;
-  /* margin-right: 10px; */
 }
 #handles>#gmail{
-  /* border:3px solid;  */
   margin-left: 60px;
 }
 #handles>#githubHandle{
@@ -147,15 +141,22 @@ a:hover{
 
 }
 
+.personal{
+  display:block;
+  background-color: #fffed9;
+  font-size: var(--regular-size);
+  box-shadow: 5px 5px 15px #000f7db0;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+}
+
 .education{
   display:block;
   background-color: #fffed9;
-  /* border:3px solid; */
-  /* justify-content: space-evenly; */
   font-size: var(--regular-size);
   box-shadow: 5px 5px 15px #000f7db0;
 }
-
 
 
 .top{
@@ -175,8 +176,9 @@ a:hover{
 
   
 }
+
+
 .bottom{
-  
   margin-top: 0px;
   display: block;
 }
@@ -186,21 +188,17 @@ a:hover{
   display: flex;
   justify-content: center;
   gap:100px;
-  /* box-shadow: 5px 5px 15px #000f7db0; */
 }
 
 .skills{
-  /* border: solid 3px; */
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  /* margin-top: 0px; */
 }
 
 li{
   font-size:var(--regular-size);
   margin-bottom: 25px;
-  /* margin-top: 0px; */
 }
 
 
@@ -229,8 +227,7 @@ li{
 }
 
 .Python>img, .CSS>img, .HTML>img, .JavaScript>img, .Java>img, .OCaml>img, .C>img, .C_>img{
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38); /* Adds shadow: horizontal offset, vertical offset, blur radius, color */
-
+  box-shadow: 5px 5px 15px #000f7db0;
 }
 
 .Python>img:hover{
@@ -270,6 +267,8 @@ li{
   animation-iteration-count: infinite;
 }
 
+
+
 @keyframes shake{
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -287,22 +286,6 @@ li{
 .projects{
   margin-left: 85px;
   
-}
-
-.rockimage:hover .overlay {
-  opacity: 1;
-}
-.overlay {
-  position: absolute; 
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #57c4e8;
 }
 
 
@@ -394,10 +377,9 @@ li{
   justify-content: flex-start; /* Aligns items to the start of the container horizontally */
   margin-bottom: 50px; /* Space below each container */
   padding: 15px; /* Padding inside the container */
-  background-color: #96a8f7;
+  background-color: #fffed9;
   margin-right: 60px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38); /* Adds shadow: horizontal offset, vertical offset, blur radius, color */
-
+  box-shadow: 5px 5px 15px #000f7db0;
 }
 
 /* Ensuring images within these containers are also styled consistently */
@@ -418,9 +400,10 @@ li{
   justify-content: flex-start; /* Aligns items to the start of the container horizontally */
   margin-bottom: 50px; /* Adds space below each project container */
   padding: 20px; /* Adds padding inside the project containers */
-  background-color: #96a8f7; /* Consistent background color for projects */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38);
+  background-color: #fffed9;
+  box-shadow: 5px 5px 15px #000f7db0;  
   margin-right: 60px;
+
 }
 
 /* Styling for images within the Calc and RockGame containers */
@@ -433,11 +416,13 @@ li{
 /* Styling for content areas within Calc and RockGame containers */
 .Calc > .calcContent, .RockGame > .rockContent {
   flex-grow: 1; /* Allows the content area to fill the remaining space */
-  padding: 15px; /* Adds padding inside the content areas */
+  padding: 0px; /* Adds padding inside the content areas */
+  /* border: 3px black solid ; */
 }
 
-/* Ensure text within content areas starts at the top */
 .Calc h2, .Calc p, .Calc a, .RockGame h2, .RockGame p, .RockGame a {
-  margin-top: 0; /* Ensures text aligns at the top */
-  padding-top: 0; /* Removes any top padding that might offset alignment */
-}
+  text-align: left;
+  margin-left: 20px;
+  
+
+} 
