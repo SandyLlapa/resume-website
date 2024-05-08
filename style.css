@@ -1,6 +1,10 @@
 /* *{
   /* display: grid; */
 /* } */ 
+
+html {
+  scroll-behavior: smooth;
+}
 :root{
   --header-size:50px;
   --regular-size:23px;
@@ -29,6 +33,7 @@ body {
 a:hover{
   color: #62e9f5;
 }
+
 .content{
   display: flex;
   margin: 30px;
@@ -42,6 +47,8 @@ a:hover{
   /* border:3px solid; */
   text-align: center;
   background-color: #96a8f7;
+  box-shadow: 5px 5px 15px #000f7db0;
+
 }
 #name{
   font-size: 60px;
@@ -122,35 +129,64 @@ a:hover{
   height:500px;
   width:400px;
   border:40px solid;
-
+  box-shadow: 5px 5px 15px #000f7db0;
   border-image-slice:65;
   border-image-source:url(border.svg);  /*change border color to gray color*/
 
 }
-.education{
-  display: flex;
-  /* border:3px solid; */
-  justify-content: space-evenly;
-  font-size: var(--regular-size);
-}
-
 .header_title{
+  background-color: #96a8f7;
+  color:white;
   text-align: center;
   font-size: var(--header-size);
   margin-top: 150px;
   margin-bottom: 30px;
-  /* border:3px solid; */
+  padding: 15px;
+  border:3px solid;
+
 
 }
 
-.right{
-  background-color: #96a8f7;
+.education{
+  display:block;
+  background-color: #fffed9;
+  /* border:3px solid; */
+  /* justify-content: space-evenly; */
+  font-size: var(--regular-size);
+  box-shadow: 5px 5px 15px #000f7db0;
+}
+
+
+
+.top{
+  /* border:3px solid; */
+  display:flex;
+  justify-content: center;
+  gap:25px;
+  /* background-color: #96a8f7; */
 }
 
 #coursework{
+  display:block;
+  /* border:3px solid; */
   font-size: var(--regular-size);
   text-align: center;
+  margin-bottom: 0px;
+
   
+}
+.bottom{
+  
+  margin-top: 0px;
+  display: block;
+}
+#classList{
+  margin-bottom: 0px;
+  /* border:3px solid; */
+  display: flex;
+  justify-content: center;
+  gap:100px;
+  /* box-shadow: 5px 5px 15px #000f7db0; */
 }
 
 .skills{
@@ -189,6 +225,63 @@ li{
   padding:30px;
   display: flex;
   justify-content:space-between;
+
+}
+
+.Python>img, .CSS>img, .HTML>img, .JavaScript>img, .Java>img, .OCaml>img, .C>img, .C_>img{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38); /* Adds shadow: horizontal offset, vertical offset, blur radius, color */
+
+}
+
+.Python>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+.CSS>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+.HTML>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+.JavaScript>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+
+.Java>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+
+.OCaml>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+
+.C>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+
+.C_>img:hover{
+  animation: shake 0.90s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .projects{
@@ -196,22 +289,6 @@ li{
   
 }
 
-
-
-.RockGame{
-  display: flex;
-  /* position: relative;
-  height:400px;
-  width: auto; */
-  border: #000000 solid 3px;
-
-}
-.rockimage{
-  position: relative;
-  border: #d00202 solid 3px;
-  height:400px;
-  width: auto;
-}
 .rockimage:hover .overlay {
   opacity: 1;
 }
@@ -228,51 +305,11 @@ li{
   background-color: #57c4e8;
 }
 
-.RockGame h2,.Calc h2{
-  margin-left: 50px;
-}
-.RockGame p, .Calc p{
-  margin-left: 50px;
-}
-.RockGame a, .Calc a{
-  margin-left: 50px;
-}
 
 
 
-.RockGame img{ 
-  border: #000000 solid 3px;
-  height:400px;
-  width: auto;
-  margin-bottom: 30px;
-
-  position: relative;
-  height:400px;
-  width: auto;
-  border: #000000 solid 3px;
-}
-
-.Calc{
-  display:flex;
-  margin-bottom: 50px;
-}
-
-.Calc img {
-  border: #000000 solid 3px;
-  height: 450px;
-}
-
-.Calc > .calcContent{
-  display: block;
-}
-
-.Drone{
-
-  /* border: #ef0b0b solid 3px; */
-  display:flex;
-}
 .Drone>#droneImages>img{
-  border: #000000 solid 3px;
+  /* border: #000000 solid 3px; */
   height: auto;
   width: 650px;
 }
@@ -297,6 +334,110 @@ li{
 
 
 
+.DanceSimulation, .EarthquakeVisual,.holeGround,.SpaceMineSweeper{
+
+  /* border: #ef0b0b solid 3px; */
+  display:flex;
+}
+.DanceSimulation>#DanceImage>img , .EarthquakeVisual>#mapImage>img, .holeGround>#holeImage>img,.SpaceMineSweeper>#spaceImage>img{
+  /* border: #000000 solid 3px; */
+  height: auto;
+  width: 650px;
+}
+#DanceImage,#mapImage,#holeImage,#spaceImage{
+  /* border: #05ffac solid 3px; */
+  width:650px;
+}
+/* .DanceSimulation>#simulation{
+  height:auto
+} */
+
+.DanceSimulation > .AntContent, .EarthquakeVisual>.mapContent, .holeGround>.holeContent,.SpaceMineSweeper>.mineContent{
+  display: block;
+}
+
+.AntContent h2, p, a {
+  /* border: #5a04fa solid 3px; */
+  /* text-align: left; */
+  margin-left: 50px;
+
+}
+.mapContent h2, p, a {
+  /* border: #5a04fa solid 3px; */
+  /* text-align: left; */
+  margin-left: 50px;
+
+}
+.holeContent h2, p, a {
+  /* border: #5a04fa solid 3px; */
+  /* text-align: left; */
+  margin-left: 50px;
+
+}
+
+.mineContent h2, p, a {
+  /* border: #5a04fa solid 3px; */
+  /* text-align: left; */
+  margin-left: 50px;
+
+}
+
+/* .DanceSimulation,.EarthquakeVisual,.holeGround,.SpaceMineSweeper,.Drone{
+
+} */
+
+
+/* General styling for all project containers */
+.DanceSimulation, .EarthquakeVisual, .holeGround, .SpaceMineSweeper, .Drone {
+  display: flex; /* Keeps items in a row */
+  align-items: flex-start; /* Aligns items to the top of the container */
+  justify-content: flex-start; /* Aligns items to the start of the container horizontally */
+  margin-bottom: 50px; /* Space below each container */
+  padding: 15px; /* Padding inside the container */
+  background-color: #96a8f7;
+  margin-right: 60px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38); /* Adds shadow: horizontal offset, vertical offset, blur radius, color */
+
+}
+
+/* Ensuring images within these containers are also styled consistently */
+.DanceSimulation img, .EarthquakeVisual img, .holeGround img, .SpaceMineSweeper img, .Drone img {
+  width: 100%;  /* Makes the image responsive within the container */
+  max-width: 650px;  /* Maximum width of images */
+  height: auto;  /* Keeps the image aspect ratio */
+  border: none;  /* Removes border from images if not needed */
+}
 
 
 
+
+/* General styling for Calc and RockGame to match other project styles */
+.Calc, .RockGame {
+  display: flex; /* Aligns children (image and content) in a row */
+  align-items: flex-start; /* Aligns items to the top of the container */
+  justify-content: flex-start; /* Aligns items to the start of the container horizontally */
+  margin-bottom: 50px; /* Adds space below each project container */
+  padding: 20px; /* Adds padding inside the project containers */
+  background-color: #96a8f7; /* Consistent background color for projects */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.38);
+  margin-right: 60px;
+}
+
+/* Styling for images within the Calc and RockGame containers */
+.Calc img, .RockGame img {
+  max-width: 300px; /* Control width, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Styling for content areas within Calc and RockGame containers */
+.Calc > .calcContent, .RockGame > .rockContent {
+  flex-grow: 1; /* Allows the content area to fill the remaining space */
+  padding: 15px; /* Adds padding inside the content areas */
+}
+
+/* Ensure text within content areas starts at the top */
+.Calc h2, .Calc p, .Calc a, .RockGame h2, .RockGame p, .RockGame a {
+  margin-top: 0; /* Ensures text aligns at the top */
+  padding-top: 0; /* Removes any top padding that might offset alignment */
+}
